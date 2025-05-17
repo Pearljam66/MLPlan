@@ -4,10 +4,9 @@
 **Start Date:** May 19, 2025
 **Goal:** Become job-ready for MLOps / ML DevOps roles
 **Schedule:** 8 hrs/day, Mon–Fri (\~1040+ hours over 6 months)
-
 ---
 
-## 📆 Week 1: Python & Data Foundations
+## 📆 Week 1: Python & Data Foundations 👩🏼‍💻
 
 **Goal:** Get comfortable with Python for data science and start exploring Jupyter, NumPy, Pandas.
 
