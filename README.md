@@ -12,7 +12,7 @@
 
 | Day | Topics           | Links / Tasks                                                                                                                                             |
 | --- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mon | Python refresher | - [Real Python – Python Basics](https://realpython.com/learning-paths/basics/) <br> - Practice in [Jupyter](https://jupyter.org/try) or VSCode            |
+| Mon | Python refresher | - [Real Python – Python Basics](https://realpython.com/learning-paths/python-basics/) <br> - Practice in [Jupyter](https://jupyter.org/try) or VSCode            |
 | Tue | NumPy            | - [NumPy Tutorial](https://numpy.org/learn/) <br> - Exercises from [W3 NumPy](https://www.w3schools.com/python/numpy/)                                    |
 | Wed | Pandas           | - [Pandas 10-Min Guide](https://pandas.pydata.org/docs/user_guide/10min.html) <br> - Work with [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic) |
 | Thu | Data analysis    | - Create simple data analysis notebook <br> - Use [Seaborn](https://seaborn.pydata.org/) for visualizations                                               |
