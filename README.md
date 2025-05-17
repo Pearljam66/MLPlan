@@ -1,299 +1,284 @@
-# 🛠️ 6-Month MLOps Engineer Roadmap
 
-A comprehensive 24-week plan to transition into an MLOps Engineer role, focusing on deploying, monitoring, and scaling machine learning models in production environments.
+### 🧠 ML DevOps Engineer Full-Time Learning Plan (6 Months)
 
----
-
-## 📅 Month 1: Foundations of Machine Learning and DevOps ✅
-
-### Week 1: Python for Data Science
-- **Objective**: Refresh Python skills pertinent to data science.
-- **Tasks**:
-  - Set up a virtual environment using `venv` or `conda`.
-  - Explore NumPy and pandas for data manipulation.
-  - Practice data visualization with Matplotlib and Seaborn.
-- **Project**: Analyze a dataset (e.g., Iris) and visualize key statistics.
-- **Resources**:
-  - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
-  - [Kaggle Python Course](https://www.kaggle.com/learn/python)
-
-### Week 2: Introduction to Machine Learning
-- **Objective**: Understand basic ML algorithms and workflows.
-- **Tasks**:
-  - Implement Linear Regression and Logistic Regression using scikit-learn.
-  - Evaluate models using metrics like RMSE and accuracy.
-- **Project**: Build a model to predict housing prices using the Boston Housing dataset.
-- **Resources**:
-  - [scikit-learn Tutorials](https://scikit-learn.org/stable/tutorial/index.html)
-  - [Hands-On Machine Learning with Scikit-Learn](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
-
-### Week 3: Data Versioning with DVC
-- **Objective**: Learn DVC for data and model versioning.
-- **Tasks**:
-  - Install and configure DVC in a project.
-  - Track datasets and model artifacts.
-- **Project**: Version control a simple ML project with DVC.
-- **Resources**:
-  - [DVC Documentation](https://dvc.org/doc)
-
-### Week 4: Containerization with Docker
-- **Objective**: Containerize ML applications for consistent environments.
-- **Tasks**:
-  - Write Dockerfiles for ML training and inference scripts.
-  - Build and run Docker containers locally.
-- **Project**: Containerize the housing price prediction model.
-- **Resources**:
-  - [Docker for Beginners](https://docker-curriculum.com/)
-  - [Dockerizing ML Models](https://blog.dominodatalab.com/docker-data-science)
+**Start Date:** May 19, 2025
+**Goal:** Become job-ready for MLOps / ML DevOps roles
+**Schedule:** 8 hrs/day, Mon–Fri (\~1040+ hours over 6 months)
 
 ---
 
-## 📅 Month 2: Experiment Tracking and Workflow Orchestration
+## 📆 Week 1: Python & Data Foundations
 
-### Week 5: Experiment Tracking with MLflow
-- **Objective**: Track experiments and manage models using MLflow.
-- **Tasks**:
-  - Set up MLflow tracking server.
-  - Log parameters, metrics, and artifacts during model training.
-- **Project**: Integrate MLflow into the existing ML project.
-- **Resources**:
-  - [MLflow Documentation](https://mlflow.org/docs/latest/index.html)
-  - [MLflow Tutorial](https://www.mlflow.org/docs/latest/tutorials-and-examples/index.html)
+**Goal:** Get comfortable with Python for data science and start exploring Jupyter, NumPy, Pandas.
 
-### Week 6: Model Registry and Deployment
-- **Objective**: Register and deploy models using MLflow Model Registry.
-- **Tasks**:
-  - Register models and manage versions.
-  - Deploy models using MLflow's deployment tools.
-- **Project**: Deploy the registered model as a REST API.
-- **Resources**:
-  - [MLflow Model Registry](https://mlflow.org/docs/latest/model-registry.html)
-
-### Week 7: Workflow Orchestration with Airflow
-- **Objective**: Automate ML pipelines using Apache Airflow.
-- **Tasks**:
-  - Install and configure Airflow.
-  - Create DAGs for data preprocessing, training, and evaluation.
-- **Project**: Automate the ML pipeline using Airflow.
-- **Resources**:
-  - [Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/index.html)
-  - [Airflow Tutorial](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html)
-
-### Week 8: Integrating MLflow with Airflow
-- **Objective**: Combine MLflow tracking with Airflow orchestration.
-- **Tasks**:
-  - Modify Airflow DAGs to include MLflow tracking.
-  - Ensure experiment metadata is logged during pipeline execution.
-- **Project**: Enhance the automated pipeline with experiment tracking.
-- **Resources**:
-  - [Integrating MLflow with Airflow](https://medium.com/thefork/a-guide-to-mlops-with-airflow-and-mlflow-e19a82901f88)
+| Day | Topics           | Links / Tasks                                                                                                                                             |
+| --- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mon | Python refresher | - [Real Python – Python Basics](https://realpython.com/learning-paths/basics/) <br> - Practice in [Jupyter](https://jupyter.org/try) or VSCode            |
+| Tue | NumPy            | - [NumPy Tutorial](https://numpy.org/learn/) <br> - Exercises from [W3 NumPy](https://www.w3schools.com/python/numpy/)                                    |
+| Wed | Pandas           | - [Pandas 10-Min Guide](https://pandas.pydata.org/docs/user_guide/10min.html) <br> - Work with [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic) |
+| Thu | Data analysis    | - Create simple data analysis notebook <br> - Use [Seaborn](https://seaborn.pydata.org/) for visualizations                                               |
+| Fri | Project Day      | - 🛠️ Build: Titanic EDA notebook (load, clean, visualize, summarize) <br> - Push to GitHub with README                                                   |
 
 ---
 
-## 📅 Month 3: Model Serving and Monitoring
+## 📆 Week 2: Machine Learning Core Concepts
 
-### Week 9: Serving Models with FastAPI
-- **Objective**: Develop APIs for model inference using FastAPI.
-- **Tasks**:
-  - Create endpoints for model predictions.
-  - Implement input validation and error handling.
-- **Project**: Build and test an API for the housing price model.
-- **Resources**:
-  - [FastAPI Documentation](https://fastapi.tiangolo.com/)
-  - [Deploying ML Models as APIs](https://towardsdatascience.com/deploying-machine-learning-models-as-apis-using-fastapi-5e5f5c8a6f4e)
+**Goal:** Learn ML theory and implement basic models using `scikit-learn`.
 
-### Week 10: Monitoring with Prometheus and Grafana
-- **Objective**: Monitor ML applications in production.
-- **Tasks**:
-  - Set up Prometheus to collect metrics.
-  - Visualize metrics using Grafana dashboards.
-- **Project**: Monitor the FastAPI application and model performance.
-- **Resources**:
-  - [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/)
-  - [Grafana Documentation](https://grafana.com/docs/grafana/latest/)
-
-### Week 11: Logging and Alerting
-- **Objective**: Implement logging and alerting mechanisms.
-- **Tasks**:
-  - Integrate structured logging into the application.
-  - Configure alerts for anomalies in predictions or system performance.
-- **Project**: Enhance the monitoring setup with logging and alerts.
-- **Resources**:
-  - [Python Logging Module](https://docs.python.org/3/library/logging.html)
-  - [Alerting with Prometheus](https://prometheus.io/docs/alerting/latest/overview/)
-
-### Week 12: Model Retraining Strategies
-- **Objective**: Develop strategies for model retraining and updates.
-- **Tasks**:
-  - Identify triggers for model retraining (e.g., data drift).
-  - Automate the retraining process using Airflow.
-- **Project**: Implement an automated retraining pipeline.
-- **Resources**:
-  - [Continuous Training with MLflow and Airflow](https://mlflow.org/docs/latest/tutorials-and-examples/tutorial.html)
+| Day | Topics                     | Links / Tasks                                                                                                                                 |
+| --- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mon | Supervised vs Unsupervised | - [Google Crash Course - Intro to ML](https://developers.google.com/machine-learning/crash-course/ml-intro)                                   |
+| Tue | Classification             | - [scikit-learn Classification Guide](https://scikit-learn.org/stable/supervised_learning.html)                                               |
+| Wed | Regression, Metrics        | - Implement Linear & Logistic Regression <br> - Learn about accuracy, precision, recall, F1                                                   |
+| Thu | Model validation           | - Train/test split, cross-validation <br> - Use [Iris dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html) |
+| Fri | Project Day                | - 🛠️ Build: Classification model on Iris/Titanic <br> - Include confusion matrix & evaluation metrics                                        |
 
 ---
 
-## 📅 Month 4: Cloud Deployment and Infrastructure as Code
+## 📆 Week 3: Intro to MLOps Concepts + GitHub Setup
 
-### Week 13: Introduction to AWS for MLOps
-- **Objective**: Familiarize with AWS services relevant to MLOps.
-- **Tasks**:
-  - Set up AWS account and configure CLI.
-  - Explore S3 for data storage and EC2 for compute resources.
-- **Project**: Deploy the ML API on an EC2 instance.
-- **Resources**:
-  - [AWS MLOps Guide](https://aws.amazon.com/blogs/machine-learning/mlops-model-deployment-and-monitoring-on-aws/)
-  - [AWS Free Tier](https://aws.amazon.com/free/)
+**Goal:** Learn what MLOps is and start using real project structure and automation.
 
-### Week 14: Infrastructure as Code with Terraform
-- **Objective**: Manage cloud infrastructure using Terraform.
-- **Tasks**:
-  - Write Terraform scripts to provision AWS resources.
-  - Use Terraform to manage S3 buckets and EC2 instances.
-- **Project**: Automate infrastructure setup for the ML application.
-- **Resources**:
-  - [Terraform Documentation](https://www.terraform.io/docs/index.html)
-  - [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-
-### Week 15: CI/CD Pipelines with GitHub Actions
-- **Objective**: Automate deployment workflows using GitHub Actions.
-- **Tasks**:
-  - Create workflows for testing, building, and deploying the ML application.
-  - Integrate Terraform scripts into the CI/CD pipeline.
-- **Project**: Set up a CI/CD pipeline for the ML API.
-- **Resources**:
-  - [GitHub Actions Documentation](https://docs.github.com/en/actions)
-  - [CI/CD for ML with GitHub Actions](https://mlops.community/mlops-ci-cd-with-github-actions/)
-
-### Week 16: Security and Compliance
-- **Objective**: Implement security best practices for ML applications.
-- **Tasks**:
-  - Secure API endpoints with authentication and authorization.
-  - Ensure data privacy and compliance with regulations.
-- **Project**: Enhance the ML API with security measures.
-- **Resources**:
-  - [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
-  - [Security Best Practices for ML](https://cloud.google.com/architecture/security-best-practices-for-machine-learning)
+| Day | Topics                 | Links / Tasks                                                                                                                        |
+| --- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Mon | What is MLOps?         | - [Google MLOps Guide](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) |
+| Tue | Project structure      | - Learn cookiecutter data science pattern ([Repo](https://github.com/drivendata/cookiecutter-data-science))                          |
+| Wed | Git, GitHub, Makefiles | - Add Makefile and DVC (next week) <br> - Create `mlops-portfolio` GitHub repo                                                       |
+| Thu | CI/CD in ML            | - Read [CI/CD for ML](https://ml-ops.org/content/cicd) <br> - Intro to GitHub Actions                                                |
+| Fri | Project Day            | - 🛠️ Refactor previous week’s model into a repo with `src/`, `notebooks/`, `Makefile`                                               |
 
 ---
 
-## 📅 Month 5: Advanced Topics in MLOps
+## 📆 Week 4: DVC, MLflow, Experiment Tracking
 
-### Week 17: Kubernetes for ML Workloads
-- **Objective**: Deploy and manage ML applications on Kubernetes.
-- **Tasks**:
-  - Set up a local Kubernetes cluster using Minikube.
-  - Deploy the ML API as a Kubernetes service.
-- **Project**: Containerize and deploy the ML application on Kubernetes.
-- **Resources**:
-  - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
-  - [Kubernetes for ML](https://www.kubeflow.org/)
+**Goal:** Manage datasets & experiments like a real ML engineer.
 
-### Week 18: Kubeflow Pipelines
-- **Objective**: Orchestrate ML workflows using Kubeflow Pipelines.
-- **Tasks**:
-  - Install Kubeflow and create pipeline components.
-  - Deploy and monitor ML pipelines.
-- **Project**: Build an end-to-end ML pipeline with Kubeflow.
-- **Resources**:
-  - [Kubeflow Pipelines Documentation](https://www.kubeflow.org/docs/components/pipelines/)
-
-### Week 19: Model Optimization Techniques
-- **Objective**: Optimize models for performance and efficiency.
-- **Tasks**:
-  - Apply techniques like quantization and pruning.
-  - Evaluate the impact on model accuracy and inference speed.
-- **Project**: Optimize the housing price model for faster inference.
-- **Resources**:
-  - [TensorRT Documentation](https://docs.nvidia.com/deeplearning/tensorrt/)
-
-### Week 20: Serving Models with KServe
-- **Objective**: Serve ML models at scale using KServe (formerly KFServing) on Kubernetes.
-- **Tasks**:
-  - Install KServe on your Kubernetes cluster.
-  - Package a trained model (e.g., from your earlier housing price project) using the required KServe format (SavedModel for TensorFlow, `.pkl` for scikit-learn, etc.).
-  - Create an `InferenceService` YAML spec to define how your model will be deployed and served.
-  - Deploy the model using `kubectl apply -f` and verify the deployment.
-  - Test the live endpoint using `curl` or Postman with sample data payloads.
-  - Monitor the KServe pod logs and status to ensure reliability.
-- **Project**: Deploy and expose the trained housing price model using KServe, complete with input validation and logging.
-- **Stretch Goal**:
-  - Enable autoscaling with KServe and test how it responds to varying load.
-- **Resources**:
-  - [KServe Documentation](https://kserve.github.io/website/)
-  - [KServe Quickstart Guide](https://kserve.github.io/website/0.9/get_started/first_isvc/)
-  - [Serving scikit-learn Models with KServe](https://kserve.github.io/website/modelserving/sklearn/)
-
-### Week 21: Model Drift Detection & Data Quality Monitoring
-- **Objective**: Implement tools to detect model and data drift in production.
-- **Tasks**:
-  - Understand types of drift: data drift, concept drift, and label drift.
-  - Install and explore tools like Evidently or WhyLabs.
-  - Log prediction distribution and feature statistics over time.
-  - Compare baseline training data against production data.
-- **Project**: Set up drift detection for the deployed housing price model using Evidently.
-- **Resources**:
-  - [Evidently AI](https://www.evidentlyai.com/)
-  - [Evidently + Jupyter Notebook Examples](https://github.com/evidentlyai/evidently)
-  - [WhyLabs Open-Source](https://whylabs.ai/whylogs)
+| Day | Topics                  | Links / Tasks                                                                                           |
+| --- | ----------------------- | ------------------------------------------------------------------------------------------------------- |
+| Mon | DVC for data versioning | - [DVC Intro](https://dvc.org/doc/start) <br> - Apply to Titanic/Iris project                           |
+| Tue | MLflow tracking         | - [MLflow Quickstart](https://mlflow.org/docs/latest/quickstart.html) <br> - Log parameters and metrics |
+| Wed | Integrate MLflow + DVC  | - Connect DVC + MLflow <br> - Use GitHub Actions to automate                                            |
+| Thu | Model packaging         | - Learn [MLflow Model Registry](https://mlflow.org/docs/latest/model-registry.html)                     |
+| Fri | Project Day             | - 🛠️ Upgrade last week’s project with DVC, MLflow logging & GitHub Actions CI                          |
 
 ---
 
-### Week 22: CI/CD for Continuous Training & Deployment
-- **Objective**: Automate full ML lifecycle from retraining to deployment.
-- **Tasks**:
-  - Set up CI/CD workflows in GitHub Actions (or GitLab CI) to:
-    - Run tests on data ingestion and model training.
-    - Automatically trigger retraining when data is updated.
-    - Redeploy updated models to staging or production.
-  - Add validation gates (e.g., performance thresholds).
-- **Project**: Build a CI/CD pipeline for full ML lifecycle (data to deployment).
-- **Resources**:
-  - [CI/CD for ML using GitHub Actions + DVC](https://dvc.org/doc/use-cases/ci-cd-pipelines)
-  - [CI/CD Pipelines with MLflow + GitHub Actions](https://mlops.community/mlops-ci-cd-with-github-actions/)
-  - [Blog: End-to-End ML Workflow with DVC + GitHub](https://iterative.ai/blog/mlops-ci-cd-using-github-actions/)
+## 📅 Week 5: Docker for ML
+
+**Goal:** Containerize ML workflows with Docker.
+
+| Day | Task                                                              | Resources                                                                                              |
+| --- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Mon | Intro to Docker                                                   | [Docker Crash Course](https://docker-curriculum.com/)                                                  |
+| Tue | Dockerfiles & Images                                              | [Dockerfile Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) |
+| Wed | Dockerizing Python Apps                                           | [Docker Python Example](https://docs.docker.com/samples/python/)                                       |
+| Thu | Docker Compose                                                    | [Docker Compose Docs](https://docs.docker.com/compose/)                                                |
+| Fri | 🛠️ Project: Dockerize previous ML model and run training locally |                                                                                                        |
+
+## 📅 Week 6: Kubernetes Basics
+
+**Goal:** Learn how to deploy containers using Kubernetes.
+
+| Day | Task                                             | Resources                                                                                       |
+| --- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Mon | K8s Intro + Architecture                         | [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)                    |
+| Tue | Pods, Deployments                                | [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) |
+| Wed | Services, Ingress                                | [K8s Networking Guide](https://kubernetes.io/docs/concepts/services-networking/)                |
+| Thu | Minikube + kubectl                               | [Minikube Docs](https://minikube.sigs.k8s.io/docs/start/)                                       |
+| Fri | 🛠️ Project: Deploy Dockerized model to Minikube |                                                                                                 |
+
+## 📅 Week 7: Airflow for ML Pipelines
+
+**Goal:** Build training pipelines with Airflow.
+
+| Day | Task                                                       | Resources                                                                                             |
+| --- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Mon | Intro to Airflow                                           | [Airflow Tutorial](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html)               |
+| Tue | DAGs and Operators                                         | [Airflow DAG Concepts](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html) |
+| Wed | Triggering and Scheduling                                  | [Airflow Scheduling](https://airflow.apache.org/docs/apache-airflow/stable/scheduler.html)            |
+| Thu | ML pipeline in Airflow                                     | [ML with Airflow Example](https://github.com/apache/airflow/tree/main/airflow/example_dags)           |
+| Fri | 🛠️ Project: Create full training-eval pipeline in Airflow |                                                                                                       |
+
+## 📅 Week 8: Model Serving + REST APIs
+
+**Goal:** Learn serving models via web APIs.
+
+| Day | Task                                                      | Resources                                                                                           |
+| --- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Mon | Flask + FastAPI intro                                     | [FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/)                                          |
+| Tue | Model loading and prediction endpoint                     | [Serving ML with FastAPI](https://towardsdatascience.com/fastapi-for-machine-learning-5ec4c0232dd6) |
+| Wed | Testing and Swagger                                       | [FastAPI Docs](https://fastapi.tiangolo.com/)                                                       |
+| Thu | Dockerize your API                                        | Reuse Docker knowledge from Week 5                                                                  |
+| Fri | 🛠️ Project: Build + serve ML model via FastAPI container |                                                                                                     |
+
+## 📅 Week 9: Cloud Platforms (AWS or GCP)
+
+**Goal:** Deploy ML APIs to the cloud.
+
+| Day | Task                                          | Resources                                                                                             |
+| --- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Mon | IAM, EC2 basics (AWS) or Compute Engine (GCP) | [AWS EC2 Tutorial](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)           |
+| Tue | Storage: S3 or GCS                            | [AWS S3](https://docs.aws.amazon.com/s3/index.html), [GCP GCS](https://cloud.google.com/storage/docs) |
+| Wed | Deploy Docker container to cloud              | [Deploy Docker to EC2](https://docs.docker.com/cloud/ecs-integration/)                                |
+| Thu | Test/monitor live API                         | Use Postman, CloudWatch/GCP Logs                                                                      |
+| Fri | 🛠️ Project: Deploy model API to AWS/GCP      |                                                                                                       |
+
+## 📅 Week 10: CI/CD for ML
+
+**Goal:** Automate model training and deployment.
+
+| Day | Task                                                       | Resources                                                 |
+| --- | ---------------------------------------------------------- | --------------------------------------------------------- |
+| Mon | CI/CD principles                                           | [CI/CD for ML](https://ml-ops.org/content/cicd)           |
+| Tue | GitHub Actions deep dive                                   | [GitHub Actions Docs](https://docs.github.com/en/actions) |
+| Wed | Training in CI                                             | Use Makefile + script in GitHub workflow                  |
+| Thu | Auto-deploy API in CI                                      | Add deployment step to GitHub Actions                     |
+| Fri | 🛠️ Project: End-to-end CI/CD pipeline with GitHub Actions |                                                           |
+
+## 📅 Week 11: Model Monitoring
+
+**Goal:** Monitor drift, latency, performance in prod.
+
+| Day | Task                                                  | Resources                                                                 |
+| --- | ----------------------------------------------------- | ------------------------------------------------------------------------- |
+| Mon | Monitoring basics                                     | [Prometheus + Grafana](https://prometheus.io/docs/visualization/grafana/) |
+| Tue | Model drift detection                                 | [Alibi Detect](https://docs.seldon.io/projects/alibi-detect/en/stable/)   |
+| Wed | Log structured metrics                                | Use `logging` + Prometheus exporters                                      |
+| Thu | Visualize metrics                                     | Build Grafana dashboard locally                                           |
+| Fri | 🛠️ Project: Add monitoring to API deployed in Week 9 |                                                                           |
 
 ---
 
-### Week 23: Capstone Project – Production-Ready ML System
-- **Objective**: Build and document an end-to-end ML system with real-world features.
-- **Tasks**:
-  - Choose a dataset (e.g., credit risk, house pricing, sentiment classification).
-  - Build an ML pipeline:
-    - Data validation and preprocessing
-    - Model training and hyperparameter tuning
-    - Experiment tracking (MLflow)
-    - Versioning (DVC)
-    - Deployment (KServe + FastAPI backup)
-    - Monitoring (Prometheus + Evidently)
-  - Set up CI/CD for full automation.
-- **Project**: Capstone ML pipeline deployed on cloud or local Kubernetes with monitoring.
-- **Bonus**: Document everything as a GitHub portfolio project with a README, diagrams, and architecture breakdown.
-- **Resources**:
-  - [Kaggle Datasets](https://www.kaggle.com/datasets)
-  - [Awesome MLOps GitHub](https://github.com/visenger/awesome-mlops)
-  - [Real-World MLOps Examples](https://github.com/mlops-guide/mlops-course)
+## 📅 Week 12: Weights & Biases (W\&B)
+
+**Goal:** Integrate W\&B for experiment tracking, logging, and collaboration.
+
+| Day | Task                                                      | Resources                                                                |
+| --- | --------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Mon | Intro to W\&B, install/setup                              | [W\&B Quickstart](https://docs.wandb.ai/quickstart)                      |
+| Tue | Logging metrics during training                           | [W\&B Keras/PyTorch examples](https://docs.wandb.ai/guides/integrations) |
+| Wed | Model comparison dashboards                               | [W\&B Reports](https://docs.wandb.ai/guides/reports)                     |
+| Thu | Team collaboration & Sweeps                               | [W\&B Sweeps](https://docs.wandb.ai/guides/sweeps)                       |
+| Fri | 🛠️ Project: Add W\&B tracking to past training pipelines |                                                                          |
+
+## 📅 Week 13: SageMaker 101 (AWS ML Platform)
+
+**Goal:** Train, deploy, and monitor ML models using SageMaker.
+
+| Day | Task                                            | Resources                                                                                             |
+| --- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Mon | Intro + SageMaker Studio setup                  | [SageMaker Studio Setup](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio.html)              |
+| Tue | Build & train models                            | [SageMaker Training Jobs](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html) |
+| Wed | Deploy + invoke endpoints                       | [SageMaker Endpoints](https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html)        |
+| Thu | Monitor deployed models                         | [Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)                   |
+| Fri | 🛠️ Project: Train + deploy model via SageMaker |                                                                                                       |
+
+## 📅 Week 14: TensorRT and Model Optimization
+
+**Goal:** Accelerate inference for deployment.
+
+| Day | Task                                                 | Resources                                                                                           |
+| --- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Mon | Intro to model compression + TensorRT                | [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt)                                            |
+| Tue | Convert models to ONNX + optimize                    | [ONNX Export](https://pytorch.org/tutorials/advanced/super_resolution_with_onnxruntime.html)        |
+| Wed | Benchmark speedup results                            | Use Jupyter or script benchmarks                                                                    |
+| Thu | TensorRT with Docker                                 | [TensorRT in Docker](https://docs.nvidia.com/deeplearning/tensorrt/docker/docker-installation.html) |
+| Fri | 🛠️ Project: Optimize + deploy a model with TensorRT |                                                                                                     |
+
+## 📅 Week 15: DataOps for ML
+
+**Goal:** Automate versioning, validation, ingestion pipelines.
+
+| Day | Task                                                    | Resources                                                                           |
+| --- | ------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Mon | Data validation + schema checks                         | [Great Expectations](https://greatexpectations.io/)                                 |
+| Tue | Data versioning                                         | [DVC Pipelines](https://dvc.org/doc/start/data-versioning)                          |
+| Wed | Automate ingestion jobs                                 | [Airflow + DataOps](https://www.astronomer.io/guides/data-ingestion-with-airflow/)  |
+| Thu | Batch vs stream ingestion                               | [Batch vs Stream](https://cloud.google.com/architecture/batch-vs-stream-processing) |
+| Fri | 🛠️ Project: End-to-end data validation + ingestion DAG |                                                                                     |
+
+## 📅 Week 16: Advanced MLOps Architecture
+
+**Goal:** Understand and design complete MLOps pipelines.
+
+| Day | Task                                                    | Resources                                                                                 |
+| --- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Mon | Study major MLOps patterns                              | [MLOps Stack Guide](https://ml-ops.org/content/mlops-stack)                               |
+| Tue | Kubeflow intro                                          | [Kubeflow Pipelines](https://www.kubeflow.org/docs/components/pipelines/v1/introduction/) |
+| Wed | TFX + Vertex AI overview                                | [TFX Overview](https://www.tensorflow.org/tfx)                                            |
+| Thu | Pick stack for capstone project                         |                                                                                           |
+| Fri | 🛠️ Project: Architecture doc + tech stack for capstone |                                                                                           |
+
+## 📅 Week 17–21: Capstone Part 1 — Design + Setup
+
+**Goal:** Prepare your full-stack ML app project for capstone.
+
+| Week | Focus                        | Tasks                                                    |
+| ---- | ---------------------------- | -------------------------------------------------------- |
+| 17   | Data Collection & Cleaning   | Use real dataset (e.g., Kaggle), apply DVC, validation   |
+| 18   | Model Dev + W\&B integration | Train model (classification or regression), log via W\&B |
+| 19   | Serve Model API              | FastAPI + Docker + CI/CD                                 |
+| 20   | Deploy to Cloud              | Use AWS/GCP + Monitoring tools                           |
+| 21   | Evaluation + Monitoring      | Implement Grafana or SageMaker Monitor + test logs       |
+
+## 📅 Week 22: Capstone Part 2 — Automation
+
+**Goal:** Add retraining pipelines, batch/online deployment.
+
+| Day | Task                                                            | Resources                                                                                 |
+| --- | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Mon | Automate pipeline in Airflow/Kubeflow                           | [Kubeflow Pipelines](https://www.kubeflow.org/docs/components/pipelines/v1/introduction/) |
+| Tue | CI/CD for retraining                                            | Use GitHub Actions for pipeline triggers                                                  |
+| Wed | Auto-monitor drift + retrigger training                         | Integrate Alibi Detect                                                                    |
+| Thu | Publish architecture + README                                   | Document clearly on GitHub                                                                |
+| Fri | 🛠️ Final Test: simulate end-to-end model retraining + redeploy |                                                                                           |
+
+## 📅 Week 23: Edge Deployment with TensorFlow Lite + CoreML
+
+**Goal:** Learn to deploy models on edge devices (mobile, embedded).
+
+| Day | Task                                                | Resources                                                                                                    |
+| --- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Mon | Intro to TFLite, convert model                      | [TFLite Conversion](https://www.tensorflow.org/lite/convert)                                                 |
+| Tue | Optimize + quantize model                           | [Post-training quantization](https://www.tensorflow.org/model_optimization/guide/quantization/post_training) |
+| Wed | Integrate TFLite with Android/iOS                   | [TFLite Mobile Deployment](https://www.tensorflow.org/lite/guide/android)                                    |
+| Thu | CoreML intro + converter                            | [CoreML Tools](https://github.com/apple/coremltools)                                                         |
+| Fri | 🛠️ Project: Edge model prototype for mobile device |                                                                                                              |
+
+## 📅 Week 24: Federated Learning + Privacy
+
+**Goal:** Explore decentralized model training and privacy preservation.
+
+| Day | Task                                                     | Resources                                                           |
+| --- | -------------------------------------------------------- | ------------------------------------------------------------------- |
+| Mon | Intro to FL + use cases                                  | [TensorFlow Federated](https://www.tensorflow.org/federated)        |
+| Tue | Simulate FL across clients                               | [TFF Tutorials](https://www.tensorflow.org/federated/tutorials)     |
+| Wed | Explore privacy-preserving training                      | [Opacus (PyTorch)](https://opacus.ai/)                              |
+| Thu | Add differential privacy to pipeline                     | [Google DP Library](https://github.com/google/differential-privacy) |
+| Fri | 🛠️ Project: FL training simulation + privacy evaluation |                                                                     |
+
+## 📅 Week 25: Multi-Model Pipelines + Ensemble Strategies
+
+**Goal:** Implement and deploy advanced inference setups.
+
+| Day | Task                                                          | Resources                                                                 |
+| --- | ------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Mon | Learn ensemble theory + voting                                | [Ensemble Methods](https://scikit-learn.org/stable/modules/ensemble.html) |
+| Tue | Pipeline with multiple models + ensembling                    | Use scikit-learn + FastAPI                                                |
+| Wed | Ensemble with different architectures                         | Train different models, merge predictions                                 |
+| Thu | Optimize ensemble latency                                     | Batch predictions + async API testing                                     |
+| Fri | 🛠️ Project: Deploy model ensemble for fraud detection or NLP |                                                                           |
+
+## 📅 Week 26: ML Monitoring & Feedback Loops
+
+**Goal:** Build a production-ready monitoring dashboard + feedback system.
+
+| Day | Task                                                         | Resources                                                             |
+| --- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
+| Mon | Integrate Prometheus + Grafana for monitoring                | [Prometheus Setup](https://prometheus.io/docs/introduction/overview/) |
+| Tue | Log model predictions + performance                          | Use custom logger or Grafana Loki                                     |
+| Wed | Detect model drift in real-time                              | [Evidently AI](https://www.evidentlyai.com/)                          |
+| Thu | Design feedback loop architecture                            | Define retraining/alert criteria                                      |
+| Fri | 🛠️ Final Project: Full feedback-aware ML system + dashboard |                                                                       |
 
 ---
-
-### Week 24: Interview Preparation & Portfolio Polish
-- **Objective**: Prepare for MLOps interviews and finalize job application materials.
-- **Tasks**:
-  - Revise resume for MLOps roles.
-  - Add all projects (Dockerized, documented) to GitHub with READMEs.
-  - Practice with MLOps interview questions:
-    - System design (e.g., “How would you build a pipeline for daily retraining?”)
-    - Monitoring, model drift, scalability, deployment
-    - Tools: MLflow vs SageMaker vs Vertex AI
-  - Do mock interviews or practice questions.
-- **Project**: Finalized portfolio repo + resume targeting “ML DevOps Engineer” roles.
-- **Resources**:
-  - [MLOps Interview Qs (GitHub)](https://github.com/chiphuyen/ml-interviews-book)
-  - [System Design Primer](https://github.com/donnemartin/system-design-primer)
-  - [MLOps Interview Guide by TWiML](https://twimlai.com/ai-job-listings/mlops-job-interview-questions/)
-
----
-
-
-
-
