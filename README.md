@@ -1,7 +1,7 @@
 
 ### 🧠 ML DevOps Engineer Full-Time Learning Plan (6 Months)
 
-**Start Date:** May 19, 2025
+**Start Date:** May 26, 2025
 **Goal:** Become job-ready for MLOps / ML DevOps roles
 **Schedule:** 8 hrs/day, Mon–Fri (\~1040+ hours over 6 months)
 ---
